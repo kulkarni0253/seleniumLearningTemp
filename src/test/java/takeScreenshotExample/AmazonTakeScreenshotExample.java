@@ -18,7 +18,8 @@ public class AmazonTakeScreenshotExample extends BaseTest {
 	public void verifySearchFeature() throws Exception {
 		
 		
-		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector("#twotabsearchtextbox")));
 		
 		driver.findElement(By.cssSelector("#twotabsearchtextbox")).sendKeys("iphone 15 pro");;
 		
