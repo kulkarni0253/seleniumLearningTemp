@@ -35,6 +35,8 @@ public class AmazonTakeScreenshotExample extends BaseTest {
 //		
 //		FileUtils.copyFile(screenshotFile, targetLocation);
 		
+
+		Thread.sleep(4000);
 		getScreenshot("Screenshot_Amazon_verifySearchFeature");
 		
 		
